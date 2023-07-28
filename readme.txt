@@ -1,0 +1,1 @@
+07/27 - Learning a scripting language to develop script for ci/cd automation 
