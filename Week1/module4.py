@@ -51,12 +51,32 @@ print(sol2[0])
 age = 16
 address = 'unique'
 txt = "YOLO age = {} address = '{}'"
+txt1 = "YOLO age = {a} address = '{b}'"
 print(txt.format(age, address))
+print(txt1.format(a=age, b=address))
 
 price = 12.45789
+# Float formatting flows{value:width.precisionf}
 display_price = "The price is {0:.2f}"
 print(display_price.format(price))
 
 
 example = f'The age is {age}. The address is {address}'
 print(example)
+
+
+# string slicing step size
+
+# Recap syntax sol[0:n:stepsize]
+
+bol = 'TokoStop'
+print(bol[::2])  # here we have specified step size, the jumps it will take
+
+# to reverse a string
+
+print(bol[::-1])
+
+
+# String are imutable , you cannot manipulate string like below
+# bol[7]= 'k'
+# depend on concationation if you want to do something like this
